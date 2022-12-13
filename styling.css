@@ -1,0 +1,260 @@
+html{
+    background-color: lavender;
+    box-sizing: border-box;
+
+}
+
+header{
+    color:white;
+    background-color: rgb(222, 209, 237);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    line-height: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.vanliga {
+    text-align: center;
+}
+
+a{
+    border-style: hidden;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border-spacing: 5px;
+} 
+
+a:link, a:visited {
+    background-color: black;
+    color: white; 
+    text-decoration: none;
+    padding: 15px, 25px;
+    display: inline-block;
+    text-align: center;
+}
+  
+.linkedin-github:link, .linkedin-github:visited {
+    background-color: white;
+    color: black; 
+    text-decoration: none;
+    padding: 15px, 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+a:hover, a:active{
+    background-color: gray;
+    
+} 
+
+.bästa-jag {
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.bilden{
+    width: 165,5px;
+    height: 205,6px; 
+    display: inline-block;
+    margin: 0;
+    max-width: 700px;
+    align-items: left;
+    padding: 0px 20px 20px 0px;
+
+    justify-content: space-around;
+    padding: 0 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 15%;
+    text-align: center;
+    margin: 0px 8px;
+    padding: 10px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    background-color: whitesmoke;
+    width: auto;
+}
+
+.namn-till-bilden{
+    font-weight: bold;
+
+    /* få ner namnet??? */
+}
+
+.texten{
+    display: inline-block;
+    margin: auto;
+    max-width: 700px;
+}
+
+.streck{
+    max-width: 940px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.med-punkter{
+    display: inline-block;
+    text-align: left;
+}
+
+.utan-punkter{
+    display: inline;
+    text-align: left;
+    list-style-type: NONE;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.tabell-portfolio {
+    font-family: times new roman, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 700px;
+}
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+  
+  th:nth-child(even) {
+    background-color: #f1c7e686;
+}
+
+.tabell-contact{
+    font-family: times new roman, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+  
+  th:nth-child(odd) {
+    background-color: #f1c7e664;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+
+}
+
+.contact-sidan{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.om-mig-contact{
+   margin: 20px 0px 20px 20px 
+}
+
+
+
+#root {
+    display: flex;
+    width: 600px; 
+    height: 600px;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 1;
+}
+nav {
+    flex-grow: 1;
+}
+main {
+    flex-grow: 3;
+}
+footer {
+    flex-grow: 0.5;
+}
+
+.text-container {
+    display:inline-block;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    flex-grow: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    .utan-punkter {
+        flex-direction: row;
+        text-align: center;
+    }
+    .vanliga {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    #root {
+        width: 100%;
+    }
+}
+
+.linkedin-github{
+    border-style: groove;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border-spacing: 5px;
+    flex-wrap: wrap;
+
+    text-align: left;
+    margin: 0px 0px 0px 10px;
+}
+
+.linkedin-github-p{
+    text-align: left;
+    margin: 30px 0px 0px 20px;
+}
+
+.contact-info{
+    display: flex;
+
+    flex-direction: column;
+}
+
+.main-styling{
+    display: flex;
+    flex-direction: column;
+}
+
+.design{
+    max-width: 400px;
+    margin:auto;
+}
